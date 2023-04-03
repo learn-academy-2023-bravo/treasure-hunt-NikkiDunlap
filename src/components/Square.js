@@ -8,6 +8,7 @@ const Square = ({square, index, handleGamePlay}) => {
   return (
     <>
       <div className="square" onClick={handleClick}>{square}</div>
+      
     </>
   )
 }

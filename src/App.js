@@ -24,12 +24,17 @@ const App = () => {
       updateBoard[clickedSquare] = "💀"
       setBoard(updateBoard)
     } else {updateBoard[clickedSquare] =  "🧸"
-    setBoard(updateBoard)
+      setBoard(updateBoard)
     }
   }
 
     const [treasureLocation, setTreasureLocation] = useState(Math.floor(Math.random() * board.length))
     const [bombLocation, setBombLocation] = useState(Math.floor(Math.random() * board.length))
+    // const [gameOver, setGameOver] = useState(false)
+    // const restartGame = () => {
+    //   setBoard(Array(9).fill("?"))
+    //   setGameOver(false)
+    
     
 
   return (
@@ -47,14 +52,11 @@ const App = () => {
         })
       }
     </div>
+    
     </>
   )
 }
 
 export default App
-
-
-
-
 
 
